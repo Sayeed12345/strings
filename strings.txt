@@ -1,0 +1,14 @@
+// Q.A-1: Create a function inside a smart contract that takes two strings as input and returns after joining them.
+// Input : Web, Clues
+// Output : Webclues
+
+pragma solidity >=0.8.4 <0.9.0;
+
+function concatenate(
+string calldata a,
+string calldata b)
+external
+pure
+returns(string memory){
+return string(abi.encodePacked(a,b));
+}
